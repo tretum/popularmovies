@@ -27,8 +27,6 @@ public class MainActivity extends AppCompatActivity implements PosterAdapter.Pos
     public static final String QUERY_METHOD_POPULAR = "popular";
     public static final String QUERY_METHOD_HIGHEST_RATED = "top_rated";
 
-    // TODO Fix Layout in grid
-
     private RecyclerView mPosterGridRecyclerView;
     private TextView mErrorMessageTextView;
     private ProgressBar mProgressBar;

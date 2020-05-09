@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class NetworkUtils {
 
-    // TODO Insert API Key here!
     public static final Uri API_URI = Uri.parse("https://api.themoviedb.org/3/");
 
     public static final String API_IMAGE_BASE_PATH = "https://image.tmdb.org/t/p/";
