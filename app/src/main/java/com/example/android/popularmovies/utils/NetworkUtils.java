@@ -58,6 +58,7 @@ public class NetworkUtils {
 
     /**
      * This method returns the entire result from the HTTP response.
+     * This function is used from the Tutorial projects
      *
      * @param url The URL to fetch the HTTP response from.
      * @return The contents of the HTTP response.
