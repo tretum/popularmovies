@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">Popular Movies</string>
     <string name="lipsum_two_paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tempor a augue vel consequat. In hac habitasse platea dictumst. Sed vitae tempor ex. Aenean viverra porta varius. In hac habitasse platea dictumst. Donec tempus tristique lorem, a suscipit nibh eleifend id. Aliquam in est nec mi lacinia elementum. Sed efficitur condimentum nisi sit amet scelerisque. Nulla nec velit molestie, sollicitudin tellus sed, tristique leo. Pellentesque aliquam lorem vitae dictum dignissim. In hac habitasse platea dictumst. Donec sed pharetra nulla, sit amet blandit mi. Ut in est eros. Praesent varius eu augue vitae ornare. Sed sit amet mi quis mauris dignissim luctus. Vestibulum euismod porta rutrum. Sed consequat nec leo vitae finibus. Integer eu placerat mauris, at varius ipsum. Curabitur imperdiet enim sit amet elit pharetra, ac feugiat metus vestibulum. Curabitur venenatis, dui non suscipit pulvinar, lorem nunc elementum orci, quis tincidunt enim leo a nunc. In vel sagittis mi. Nam cursus sit amet nisl a blandit. Mauris sit amet hendrerit augue, sed posuere massa.</string>
-    <string name="error_message">An error has occured. Please try again later and ensure that you are connected to the internet.</string>
+    <string name="error_message">An error has occurred. Please try again later and ensure that you are connected to the internet.</string>
     <string name="most_popular_menu_title">Most Popular</string>
     <string name="highest_rated_menu_title">Highest Rated</string>
     <string name="refresh_title">Refresh</string>
+    <string name="runtime">%1$d mins</string>
+    <string name="rating">%1$,.1f/10</string>
+    <string name="highest_rated_title">Highest Rated Movies</string>
+    <string name="most_popular_title">Most Popular Movies</string>
 </resources>

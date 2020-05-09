@@ -15,6 +15,8 @@ public class NetworkUtils {
     public static final Uri API_URI = Uri.parse("https://api.themoviedb.org/3/");
 
     public static final String API_IMAGE_BASE_PATH = "https://image.tmdb.org/t/p/";
+    public static final String MOVIE_PATH = "movie";
+    public static final String API_KEY_PARAM_NAME = "api_key";
 
     public enum IMAGE_SIZES {
         W185, W500
@@ -28,11 +30,16 @@ public class NetworkUtils {
         }
     }
 
+    /**
+     * Sends an request to the Movie DB API for movies with the specified query method.
+     * @param queryMethod the query method to use.
+     * @return The JSON string of the answer, if request successful.
+     */
     public static String sendApiRequest(String queryMethod) {
         Uri popularUri = API_URI.buildUpon()
-                .appendPath("movie")
+                .appendPath(MOVIE_PATH)
                 .appendPath(queryMethod)
-                .appendQueryParameter("api_key", BuildConfig.THE_MOVIE_DB_API_TOKEN)
+                .appendQueryParameter(API_KEY_PARAM_NAME, BuildConfig.THE_MOVIE_DB_API_TOKEN)
                 .build();
 
         try {

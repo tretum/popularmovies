@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -49,8 +48,6 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterAdap
 
         String imageSize = NetworkUtils.getImageSize(NetworkUtils.IMAGE_SIZES.W500);
         String path = NetworkUtils.API_IMAGE_BASE_PATH + imageSize + queryListEntry.getPosterPath();
-        int maxWidth = holder.posterThumbnailImageView.getWidth();
-        int maxHeight = holder.posterThumbnailImageView.getWidth();
 
         Picasso.get()
                 .load(path)

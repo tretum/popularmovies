@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements PosterAdapter.Pos
     private ProgressBar mProgressBar;
     private PosterAdapter posterAdapter;
 
-    private String currentQueryMethod = "popular";
+    private String currentQueryMethod = QUERY_METHOD_POPULAR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,9 +95,9 @@ public class MainActivity extends AppCompatActivity implements PosterAdapter.Pos
 
     private void loadMovieList(String queryMethod) {
         if(queryMethod.equals(QUERY_METHOD_HIGHEST_RATED)) {
-            setTitle("Highest Rated Movies");
+            setTitle(getString(R.string.highest_rated_title));
         } else if(queryMethod.equals(QUERY_METHOD_POPULAR)){
-            setTitle("Most Popular Movies");
+            setTitle(getString(R.string.most_popular_title));
         }
         new FetchMovieList().execute(queryMethod);
     }

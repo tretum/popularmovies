@@ -79,8 +79,8 @@ public class Detail extends AppCompatActivity {
                 .load(path)
                 .into(mPosterImageView);
 
-        mRatingTextView.setText(movie.getRating() + "/10");
-        mRuntimeTextView.setText(movie.getRuntime() + " mins");
+        mRatingTextView.setText(getString(R.string.rating, movie.getRating()));
+        mRuntimeTextView.setText(getString(R.string.runtime, movie.getRuntime()));
         mDescriptionTextView.setText(movie.getDescription());
         mYearTextView.setText(movie.getReleaseDate());
         mTitleTextView.setText(movie.getTitle());
